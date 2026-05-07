@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multimedia</title>
+</head>
+
+<body>
+
+    <h1>Image Map Example</h1>
+
+    <p>Click different parts of the image below:</p>
+
+    <img src="photo.png" alt="Sample Map" width="400px" usemap="#mymap">
+
+    <map name="mymap">
+
+        <area shape="rect" coords="0,0,200,100"
+            href="http://www.google.com"
+            target="_blank" alt="Google">
+
+        <area shape="circle" coords="300,100,50"
+            href="https://www.wikipedia.org"
+            target="_blank" alt="Wikipedia">
+
+    </map>
+
+    <hr>
+
+    <h2>Audio Example</h2>
+
+    <p>Play the audio below:</p>
+
+    <audio controls>
+
+        <source src="sample-audio.mp3" type="audio/mpeg">
+
+        Your browser does not support the audio element.
+
+    </audio>
+
+    <hr>
+
+    <h2>Video Example</h2>
+
+    <p>Play the video below:</p>
+
+    <video width="400px" height="300px" controls>
+
+        <source src="sample-video.mp4" type="video/mp4">
+
+        Your browser does not support the video element.
+
+    </video>
+
+</body>
+
+</html>
