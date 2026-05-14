@@ -1,63 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Styling</title>
 
-    <title>Multimedia</title>
+    <!-- Internal CSS -->
+    <style>
+        #box1 {
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+            color: rgb(10, 48, 239);
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Image Map Example</h1>
+    <!-- Inline CSS -->
+    <div style="color: brown; background-color: antiquewhite; margin: 10px; padding: 10px;">
+        <h2>This is styled using inline styling.</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vel sapiente architecto
+            iusto tempore quidem consequuntur, mollitia optio eius aperiam officia enim adipisci
+            nihil quibusdam nostrum, perferendis at voluptate nulla!
+        </p>
+    </div>
 
-    <p>Click different parts of the image below:</p>
+    <!-- Internal CSS -->
+    <div id="box1">
+        <h2>This box is styled using internal CSS.</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam fugiat mollitia at
+            ullam adipisci consectetur recusandae id soluta neque ab laudantium ut nostrum,
+            unde officia molestiae eligendi aliquam. Culpa, cupiditate! Et nostrum error
+            temporibus laboriosam cumque, cupiditate, magni ad illo accusantium harum magnam,
+            ex aliquam porro? Doloribus quisquam ea ut provident esse sunt, officiis aliquid
+            rerum atque commodi, debitis distinctio?
+        </p>
+    </div>
 
-    <img src="photo.png" alt="Sample Map" width="400px" usemap="#mymap">
-
-    <map name="mymap">
-
-        <area shape="rect" coords="0,0,200,100"
-            href="http://www.google.com"
-            target="_blank" alt="Google">
-
-        <area shape="circle" coords="300,100,50"
-            href="https://www.wikipedia.org"
-            target="_blank" alt="Wikipedia">
-
-    </map>
-
-    <hr>
-
-    <h2>Audio Example</h2>
-
-    <p>Play the audio below:</p>
-
-    <audio controls>
-
-        <source src="https://www.myinstants.com/media/sounds/fahhhhhhhhhhhhhh.mp3" type="audio/mpeg">
-
-        Your browser does not support the audio element.
-
-    </audio>
-
-    <hr>
-
-    <h2>Video Example</h2>
-
-    <p>Play the video below:</p>
-
-    <video width="400px" height="300px" controls>
-
-        <source src="https://www.w3schools.com/Html/mov_bbb.mp4" type="video/mp4">
-
-        Your browser does not support the video element.
-
-    </video>
+    <!-- External CSS -->
+    <div id="box2">
+        <h2>This box is styled using External CSS.</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe distinctio voluptas
+            tempore cum laboriosam sunt aliquam dolor perspiciatis? Voluptates quidem repudiandae
+            non eos? Corporis assumenda dolor eum est quidem. Unde fugit optio perspiciatis dolor
+            accusamus accusantium ratione? Reiciendis labore alias dolorum corporis nisi eveniet
+            doloribus maxime doloremque, repellendus exercitationem architecto dignissimos tenetur
+            fugit eos repudiandae vero voluptate consequatur aut?
+        </p>
+    </div>
 
 </body>
-
 </html>
